@@ -20,8 +20,15 @@ The outputs of the model are used as an input in another model to analyze the ro
 ## The source code
 The program to train/test the model are implemented in the following files:
 <ul>
-	<li><i>main_cv.py</i>: The main file to run the cross-validation test for classification task</li>
-	<li><i>model_pl.py</i>: The classification model</li>
+	<li><i>main_survival.py</i>: The main file to train the model.</li>
+	<li><i>main_survival_cv.py</i>: The main file to train the model in K-fold cross-validation.</li>
+	<li><i>model_pl_survival.py</i>: The process to handle the training process.</li>
+	<li><i>model_attention_survival.py</i>: The Deep Attention-MIL model.</li>
+	<li><i>MIL_attention.py</i>: The Attention module.</li>
 	<li><i>bergonie_dataloader_survival_wsi.py</i>: The file to load and create the Dataset, Dataloader</li>
-	<li><i>inference_CV.py</i>: The inference process for classification cross-validation models</li>
+	<li><i>IGR1_Bergo_inference_one_region.py</i>: The inference of the trained model which has been trained on one area, applied on Beroginé and IGR_1 Set.</li>
+	<li><i>IGR2_inference_one_region.py</i>: The inference of the trained model which has been trained on one area, applied on IGR_2 Set.</li>
+	<li><i>IGR1_Bergo_inference_combination.py</i>: The inference of the trained model which has been trained on combination of areas, applied on Beroginé and IGR_1 Set.</li>
+	<li><i>IGR2_inference_combination.py</i>: The inference of the trained model which has been trained on combination of areas, applied on IGR_2 Set.</li>
+	<li><i>loss_2.py</i>: The losses.</li>
 </ul>
