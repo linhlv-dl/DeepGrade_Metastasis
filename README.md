@@ -1,1 +1,1 @@
-# DeepGrade_Metastasis
+# Deep Attention-MIL to predict the metastasis risk for Sarcoma patients
